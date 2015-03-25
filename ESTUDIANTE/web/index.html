@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+ <link rel='stylesheet' href='estilos.css'>
+ <style type="text/css">
+<!--
+.Estilo1 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+ </style>
+</head>
+
+<body>
+<p align="center" class="Estilo1">DATOS ESTUDIANTE</p>
+<form class='contacto'action="ServletController">
+  Nombres: 
+  <label>
+      <input title="Se necesitan los nombres del estudiante" type="text" name="nombres"  required/>
+  </label>
+  <p>Apellidos: 
+    <label>
+    <input title="Se necesitan los apellidos del estudiante" type="text" name="apellidos" required />
+    </label>
+  </p>
+  <p>Identificación T.I :     
+    <input title="Debe ingresar el número de su tarjeta de identidad (NÚMEROS)" type="number" name="identificacion" required />
+<label></label>
+</p>
+  <p>Fecha Nacimiento: 	
+      <input title="Seleccione la fecha de su nacimiento" type="date" name="fecha" required ></p>
+  <p>Curso:
+      
+    <select title="Seleccione su curso" name="curso" id="select" required>
+      <option value=""></option>
+      <option value="1">1°</option>
+      <option value="2">2°</option>
+      <option value="3">3°</option>
+      <option value="4">4°</option>
+      <option value="5">5°</option>
+      <option value="6">6°</option>
+      <option value="7">7°</option>
+      <option value="8">8°</option>
+      <option value="9">9°</option>
+      <option value="10">10°</option>
+      <option value="11">11°</option>
+    </select>
+  </p>
+  <p>Genero: 
+    <select title="Seleccione su género" name="genero" id="select2" required>
+      <option value=""></option>
+      <option value="M">M</option>
+      <option value="F">F</option>
+    </select>
+    <label></label>
+  </p>
+  <p>Email: 
+      <input title="Ingrese una dirección de correo electronico válida" type="email" name="email" id="textfield" required/>
+  </p>
+  <p>Telefono: 
+      <input title="Ingrese su número de telefono o celular (NÚMEROS)" type="number" name="telefono" id="textfield4" required/>
+  </p>
+  <p>Acudiente: 
+      <input title="Ingrese el nombre de su tutor acompañante" type="text" name="acudiente" id="textfield5" required />
+  </p>
+<p>
+    <label>
+    <div align="center">
+      <input type="submit" name="button" id="button" value="Guardar Datos" />
+    </div>
+    </label>
+  </p>
+</form>
+</body>
+</html>
